@@ -54,10 +54,34 @@ body{
     border: 1px solid #f5c6cb;
 }
 
+.form form .name-details{
+    display: flex;
+}
+
+.form form .name-details .field:first-child{
+    margin-right: 10px;
+}
+
+.form form .name-details .field:last-child{
+    margin-right: 10px;
+}
+
 .form form .field{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+}
+
+.form form .field  label{
+    margin-bottom: 2px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #9faecb;
+}
+
+.form form input{
+    outline: none;
 }
 
 .form form .input input{
@@ -66,5 +90,22 @@ body{
     font-size: 16px;
     padding: 0 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form form .image input{
+    position: absolute;
+    font-size: 15px;
+}
+
+.form form .button input{
+    cursor: pointer;
+    margin-top: 13px;
+    height: 45px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    background: #333;
+    color: #fff;
     border-radius: 5px;
 }

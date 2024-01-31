@@ -75,7 +75,7 @@ body{
 .form form .field  label{
     margin-bottom: 2px;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 20px;
     color: #9faecb;
 }
@@ -87,7 +87,7 @@ body{
 .form form .input input{
     height: 40px;
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
     padding: 0 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -108,4 +108,19 @@ body{
     background: #333;
     color: #fff;
     border-radius: 5px;
+}
+
+.form .link{
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin: 10px 0; 
+}
+
+.form .link a{
+    color: #333;
+}
+
+.form .link a:hover{
+    text-decoration: underline;
 }

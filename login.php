@@ -15,7 +15,7 @@
         <section class="form login">
             <header>Chat PHP</header>
             <form action="#">
-                <div class="error-txt">This is an Error Message!!</div>
+                <div class="error-txt"></div>
                 
                 <div class="field input">
                     <lable>Email Address</lable>

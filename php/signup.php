@@ -37,7 +37,7 @@ if (!empty($fname) && !empty($lname) && !empty($email) && !empty($password)) {
                             if (mysqli_num_rows($sq13) > 0) {
                                 $row = mysqli_fetch_assoc($sq13);
                                 $_SESSION['unique_id'] = $row['unique_id'];
-                                echo "Success";
+                                echo "success";
                             } else {
                                 echo "Something went wrong";
                             }
@@ -54,5 +54,5 @@ if (!empty($fname) && !empty($lname) && !empty($email) && !empty($password)) {
         echo "$email - is not a valid email";
     }
 } else {
-    echo "All input fielda are required";
+    echo "All input fields are required";
 }

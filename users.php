@@ -1,8 +1,7 @@
-<?php 
+<?php
 session_start();
 if (!isset($_SESSION['unique_id'])) {
     header("Location: login.php");
-    # code...
 }
 ?>
 
@@ -13,13 +12,19 @@ if (!isset($_SESSION['unique_id'])) {
         <section class="users">
             <header>
                 <?php
+                include_once "php/config.php";
+                $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
+                $row = null; // Initialize $row to avoid undefined variable warning
 
+                if (mysqli_num_rows($sql) > 0) {
+                    $row = mysqli_fetch_assoc($sql);
+                }
                 ?>
                 <div class="content">
-                    <img src="img.jpg" alt="">
+                    <img src="php/images/<?php echo $row['img']; ?>" alt="">
                     <div class="details">
-                        <span>Abm Noman</span>
-                        <p>Active Now</p>
+                        <span><?php echo $row['fname'] . " " . $row['lname']; ?></span>
+                        <p><?php echo $row['status']; ?></p>
                     </div>
                 </div>
                 <a href="#" class="logout">Log Out</a>

@@ -35,76 +35,7 @@ if (!isset($_SESSION['unique_id'])) {
                 <button><i class="fa fa-search"></i></button>
             </div>
             <div class="users-list">
-                <a href="#">
-                    <div class="content">
-                        <img src="img.jpg" alt="">
-                        <div class="details">
-                            <span>Abm Noman</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="img.jpg" alt="">
-                        <div class="details">
-                            <span>Abm Noman</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="img.jpg" alt="">
-                        <div class="details">
-                            <span>Abm Noman</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="img.jpg" alt="">
-                        <div class="details">
-                            <span>Abm Noman</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="img.jpg" alt="">
-                        <div class="details">
-                            <span>Abm Noman</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="img.jpg" alt="">
-                        <div class="details">
-                            <span>Abm Noman</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
-                <a href="#">
-                    <div class="content">
-                        <img src="img.jpg" alt="">
-                        <div class="details">
-                            <span>Abm Noman</span>
-                            <p>This is a test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
+
             </div>
         </section>
     </div>

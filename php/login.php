@@ -6,17 +6,17 @@ $password = mysqli_real_escape_string($conn, $_POST['password']);
 
 if (!empty($email) && !empty($password)) {  // checking empty fields
     $sql = mysqli_query($conn, "SELECT * FROM users WHERE email='{$email}' AND password='{$password}'");   // querying data from database table
-    if (mysqli_num_rows($sql) > 0) { 
+    if (mysqli_num_rows($sql) > 0) {
         $row = mysqli_fetch_assoc($sql);
-        $_SESSION['unique_id'] = $row['unique_id'];
-        echo "success";
-        
-       } else{
-            echo "Invalid Password.";
+        $status = "Active Now";
+        $sql2 = mysqli_query($conn, "UPDATE users SET status ='{$status}' WHERE unique_id =  '{$row['unique_id']}'");
+        if ($sql2) {
+            $_SESSION['unique_id'] = $row['unique_id'];
+            echo "success";
+        }
+    } else {
+        echo "Invalid Password.";
     }
-
-}else{
+} else {
     echo  "All fields are required!";
 }
-
-?>
